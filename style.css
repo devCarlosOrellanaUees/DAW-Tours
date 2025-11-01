@@ -1,0 +1,195 @@
+/* style.css */
+:root {
+    --bg: #ffffff;
+    --text: #0f1724;
+    --muted: #64748b;
+    --accent: #0ea5a4;
+    --max-width: 1000px;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.header-inner,
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.site-header {
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent)
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text);
+    text-decoration: none
+}
+
+.logo .accent {
+    color: var(--accent)
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--muted)
+}
+
+.hero {
+    padding: 2rem 0;
+    text-align: left
+}
+
+.hero h1 {
+    font-size: 1.75rem;
+    margin: 0 0 0.5rem
+}
+
+.lead {
+    color: var(--muted);
+    margin-bottom: 1rem
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none
+}
+
+.tours {
+    padding: 1rem 0
+}
+
+.tour-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.tour-list li {
+    border: 1px solid #f0f0f0;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    background: #fff
+}
+
+.tour-list img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 0.95rem
+}
+
+.why {
+    padding: 1rem 0
+}
+
+.site-footer {
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: var(--muted)
+}
+
+.about .team ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem
+}
+
+.about img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1.25rem
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    color: var(--muted)
+}
+
+.info {
+    background: #f8fafc;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #eef2f7
+}
+
+@media (max-width:700px) {
+
+    .header-inner,
+    .footer-inner {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+
+    .contact {
+        grid-template-columns: 1fr
+    }
+}
