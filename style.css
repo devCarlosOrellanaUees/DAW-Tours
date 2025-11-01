@@ -30,7 +30,8 @@ body {
 .footer-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 15px;
 }
 
 .site-header {
