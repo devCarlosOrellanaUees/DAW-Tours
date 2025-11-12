@@ -5,55 +5,86 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CarlitosTours · Viajes a Galápagos</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
+  <!-- ===================================== -->
+  <!-- ENCABEZADO -->
+  <!-- ===================================== -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">Carlitos<span class="accent">Tours</span></a>
       <nav class="main-nav" aria-label="Navegación principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" class="accent" style="font-weight: 700;">Inicio</a></li>
+          <li><a href="nosotros.html" class="accent">Nosotros</a></li>
+          <li><a href="galeria.html" class="accent">Galería</a></li>
+          <li><a href="contacto.html" class="accent">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Explora Galápagos</h1>
-      <p class="lead">Tours responsables y personalizados desde San Cristóbal y Santa Cruz. Reserva nuestro Tour 360° y
-        vive una experiencia inolvidable.</p>
-      <p><a class="btn" href="contacto.html">Reserva ahora</a></p>
-    </section>
+  <!-- ===================================== -->
+  <!-- SLIDER / HERO -->
+  <!-- ===================================== -->
+  <section class="hero-slider">
+    <div class="slide active" style="background-image: url('img/iguana.jpeg'); background-size: cover">
+      <div class="overlay">
+        <h1>Explora las Islas Encantadas</h1>
+        <p>Descubre los secretos de Galápagos con nuestros tours guiados y sostenibles.</p>
+        <a href="contacto.html" class="btn">Reserva tu aventura</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('img/tortuga-mar.jpg'); background-size: cover;">
+      <div class="overlay">
+        <h1>Sumérgete en el paraíso marino</h1>
+        <p>Snorkel con tortugas, lobos marinos y tiburones martillo.</p>
+        <a href="contacto.html" class="btn">Ver Tours</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('img/playa-foca.jpg'); background-size: cover">
+      <div class="overlay">
+        <h1>Vive la experiencia 360°</h1>
+        <p>Una ruta completa por los lugares más asombrosos del archipiélago.</p>
+        <a href="contacto.html" class="btn">Reserva ahora</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===================================== -->
+  <!-- TOURS -->
+  <!-- ===================================== -->
+  <main class="container fade-in">
     <section class="tours">
-      <h2>Nuestros Tours</h2>
+      <h2 class="section-title">Nuestros Tours</h2>
       <ul class="tour-list">
         <li>
           <img src="img/tour1.jpeg" alt="Kicker Rock" />
           <h3>Tour 360° - San Cristóbal</h3>
-          <p>Salida 07:00 - Visita Kicker Rock, Bahía Rosa Blanca, Punta Pitt y otras playas. Incluye equipo de snorkel
-            y almuerzo.</p>
-          <p class="meta">Duración: Día completo · Precio desde <strong>$180</strong></p>
+          <p>Visita Kicker Rock, Bahía Rosa Blanca, Punta Pitt y más. Incluye almuerzo y snorkel.</p>
+          <p class="meta">Duración: Día completo · Desde <strong>$180</strong></p>
         </li>
         <li>
           <img src="img/tour2.jpg" alt="Tortuga Bay" />
           <h3>Estación Darwin + Tortuga Bay</h3>
-          <p>Medio día en Santa Cruz: visita a la Estación Científica Charles Darwin y caminata a Tortuga Bay.</p>
-          <p class="meta">Duración: 4–5 h · Precio desde <strong>$45</strong></p>
+          <p>Recorre la Estación Científica Charles Darwin y disfruta de una caminata a Tortuga Bay.</p>
+          <p class="meta">Duración: 4–5 h · Desde <strong>$45</strong></p>
         </li>
         <li>
           <img src="img/tour3.jpg" alt="Isla Seymour" />
           <h3>Isla Seymour Norte</h3>
-          <p>Observación de aves marinas, fragatas y piqueros de patas azules. Ideal para amantes de la naturaleza.</p>
-          <p class="meta">Duración: Medio día · Precio desde <strong>$85</strong></p>
+          <p>Observa piqueros de patas azules, fragatas y fauna marina única del mundo.</p>
+          <p class="meta">Duración: Medio día · Desde <strong>$85</strong></p>
         </li>
       </ul>
     </section>
 
+    <!-- ===================================== -->
+    <!-- VIDEO -->
+    <!-- ===================================== -->
     <section class="video-full">
       <h2>Descubre la magia de Galápagos</h2>
       <div class="video-container">
@@ -62,24 +93,92 @@
       </div>
     </section>
 
-    <section class="why">
+    <!-- ===================================== -->
+    <!-- POR QUÉ ELEGIRNOS -->
+    <!-- ===================================== -->
+    <section class="why fade-in">
       <h2>¿Por qué elegir CarlitosTours?</h2>
-      <ol>
-        <li>Guías autorizados y bilingües.</li>
-        <li>Compromiso con la conservación y normas del Parque Nacional.</li>
-        <li>Atención personalizada y grupos pequeños.</li>
-      </ol>
+      <div class="why-grid">
+        <div class="why-card">
+          <img src="img/e1.jpg" alt="Guías expertos">
+          <h3>Guías Expertos</h3>
+          <p>Profesionales locales certificados por el Parque Nacional Galápagos. Conocen cada rincón de las islas.</p>
+        </div>
+        <div class="why-card">
+          <img src="img/e2.jpg" alt="Turismo responsable">
+          <h3>Turismo Responsable</h3>
+          <p>Nuestros tours respetan la naturaleza. Apoyamos proyectos de conservación y educación ambiental.</p>
+        </div>
+        <div class="why-card">
+          <img src="img/e3.jpg" alt="Atención personalizada">
+          <h3>Atención Personalizada</h3>
+          <p>Grupos pequeños y servicio cálido. Adaptamos cada experiencia a tus intereses y ritmo.</p>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- ===================================== -->
+  <!-- FOOTER -->
+  <!-- ===================================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2025 CarlitosTours · Agencia de turismo responsable</p> 
-      <p>Puerto Baquerizo Moreno, San Cristóbal — Ecuador</p>
-      <p>Contacto: <a href="mailto:carlos.orellana@uees.edu.ec">carlos.orellana@uees.edu.ec</a> · Tel: (+593) 985075189
-      </p>
+      <div class="footer-grid">
+        <!-- SOBRE NOSOTROS -->
+        <div class="footer-col">
+          <h3>CarlitosTours</h3>
+          <p>Agencia de turismo responsable en Galápagos. Te llevamos a vivir experiencias únicas con respeto a la
+            naturaleza.</p>
+        </div>
+
+        <!-- ENLACES RAPIDOS -->
+        <div class="footer-col">
+          <h3>Enlaces rápidos</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="tours.html">Tours</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <p>Puerto Baquerizo Moreno, San Cristóbal — Ecuador</p>
+          <p>Email: <a href="mailto:carlos.orellana@uees.edu.ec">carlos.orellana@uees.edu.ec</a></p>
+          <p>Tel: (+593) 985075189</p>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="footer-col">
+          <h3>Síguenos</h3>
+          <p>Conéctate con nosotros en redes sociales:</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 CarlitosTours · Todos los derechos reservados</p>
+      </div>
     </div>
   </footer>
+
+
+  <!-- SCRIPT SLIDER -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    setInterval(() => {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 5000);
+  </script>
 </body>
 
 </html>
