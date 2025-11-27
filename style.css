@@ -320,6 +320,7 @@ body {
     gap: 2rem;
     align-items: start;
     margin-top: 1.5rem;
+    /* border: 1px solid red; */
 }
 
 /* FORMULARIO */
@@ -719,4 +720,51 @@ body {
     .hero-slider h1 {
         font-size: 1.4rem;
     }
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+
+.gallery-search{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* 🎨 Estilo para input de búsqueda */
+#searchInput {
+    width: 100%;
+    max-width: 420px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* ✨ Placeholder más elegante */
+#searchInput::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* 💡 Efecto al pasar el mouse */
+#searchInput:hover {
+    border-color: #b9b9b9;
+}
+
+/* 🟢 Efecto al hacer clic (focus) */
+#searchInput:focus {
+    border-color: #00a7e1; /* tono celeste/azul turístico */
+    box-shadow: 0px 0px 8px rgba(0, 167, 225, 0.5);
+    background: #fdfdfd;
+}
+
+#searchInput:focus {
+    transform: scale(1.00);
 }

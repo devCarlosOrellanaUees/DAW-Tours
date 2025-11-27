@@ -31,7 +31,19 @@
             <h1>Galería de Galápagos</h1>
             <p>Explora los paisajes, la fauna y la magia de las Islas Galápagos a través de nuestras fotos.</p>
 
-            <div class="gallery-grid">
+            <!-- BUSCADOR -->
+            <div class="gallery-search">
+                <input type="text" id="searchInput" placeholder="¿Qué deseas ver? Ej: tortugas, playa, aves..." />
+                <button id="searchBtn" class="btn">Buscar</button>
+                <button id="clearBtn" class="btn">Limpiar</button>
+
+            </div>
+
+            <!-- MENSAJE DINÁMICO -->
+            <p id="searchMessage" class="hidden"></p>
+
+
+            <div id="galleryContent" class="gallery-grid">
                 <div class="gallery-item">
                     <a href="img/atardecer.jpg" class="lightbox">
                         <img src="img/atardecer.jpg" alt="Paisaje Galápagos">
@@ -119,6 +131,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
